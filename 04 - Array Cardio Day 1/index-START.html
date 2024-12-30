@@ -152,6 +152,13 @@
         "car",
         "truck",
       ];
+
+      const DataInstances = data.reduce((acc, curr) => {
+        acc[curr] ? acc[curr]++ : (acc[curr] = 1);
+        return acc;
+      }, {});
+
+      console.table(DataInstances);
     </script>
   </body>
 </html>
