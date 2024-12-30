@@ -101,7 +101,7 @@
       console.log(oldestToYoungest);
 
       // Array.prototype.reduce()
-      // 4. How many years did all the inventors live all together?
+      // 4. How many years did all the inventors live alml together?
       const totalYears = inventors.reduce((total, inventor) => {
         return total + (inventor.passed - inventor.year);
       }, 0);
@@ -116,6 +116,12 @@
 
       // 7. sort Exercise
       // Sort the people alphabetically by last name
+      const peopleNames = people.map((inventor) => {
+        const peopleFullNames[first, last] = inventor.split(", ");
+        console.log(first)
+      });
+      console.log(peopleNames);
+      const lastNameOrder = people.sort((a, b) => {});
 
       // 8. Reduce Exercise
       // Sum up the instances of each of these
