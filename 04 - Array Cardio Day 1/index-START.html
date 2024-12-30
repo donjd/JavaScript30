@@ -116,12 +116,23 @@
 
       // 7. sort Exercise
       // Sort the people alphabetically by last name
-      const peopleNames = people.map((inventor) => {
-        const peopleFullNames[first, last] = inventor.split(", ");
-        console.log(first)
+
+      // const alpha = people.sort((personA, personB) => {
+      //   const [aLast, aFirst] = personA.split(", ");
+      //   const [bLast, bFirst] = personB.split(", ");
+
+      //   return aLast > bLast ? 1 : -1;
+      // });
+
+      people.sort((personA, personB) => {
+        const [aLast, aFirst] = personA.split(", ");
+        const [bLast, bFirst] = personB.split(", ");
+
+        return aFirst > bFirst ? 1 : -1;
       });
-      console.log(peopleNames);
-      const lastNameOrder = people.sort((a, b) => {});
+
+      console.log(people);
+      // const sortPeople = people.sort((personA, personB) => {});
 
       // 8. Reduce Exercise
       // Sum up the instances of each of these
